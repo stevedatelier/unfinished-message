@@ -1,0 +1,14 @@
+{
+  "name": "unfinished-message",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22.18.0"
+  },
+  "scripts": {
+    "start": "node --experimental-sqlite server.mjs",
+    "test": "node --experimental-sqlite --test test.mjs readability.test.mjs agent-policy.test.mjs",
+    "build": "node scripts/build.mjs"
+  }
+}

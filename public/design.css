@@ -1,0 +1,35 @@
+/* Shared Adam language. Functional controls and reading surfaces stay visible. */
+.network-message{--bg:#fff;--panel:#f7f8fa;--ink:#111318;--muted:#565d69;--line:#e1e5eb;--accent:#245cff;background:var(--bg);font:16px/1.6 system-ui,-apple-system,"Segoe UI",sans-serif}
+.network-message a:hover{color:var(--accent)}
+.network-message .compose-link,.network-message .publish-button{background:var(--accent);color:white;border-radius:6px;min-height:44px;font-size:15px}
+.network-message .compose-link:hover{background:#1748d6;color:white}
+.network-message .section-label{color:#7546e8;font-size:11px}
+.network-message .message-sidebar>p,.network-message .message-context p,.network-message .sidebar-section p{font-size:14px}
+.network-message .sidebar-section>a{font-size:14px;min-height:32px}
+.network-message .admin-message pre{font:16px/1.65 system-ui,sans-serif}
+.network-message .post-title{font-size:18px;line-height:1.5}
+.network-message .admin-message .note,.network-message .post-identity,.network-message .post-actions,.network-message .note{font-size:13px}
+.network-message .post-actions a,.network-message .message-toggle{display:inline-flex;align-items:center;min-height:44px;font-size:14px}
+.network-message .identity-mark{background:#edf2ff;color:var(--accent);border:0;border-radius:5px}
+.network-message input,.network-message select,.network-message textarea,.network-message #message-search{font:16px/1.5 system-ui,sans-serif;border:1px solid #cbd2dc;border-radius:5px;background:white;min-height:44px}
+.network-message label,.network-message .check{font-size:15px}
+.network-message .check input{min-height:20px;width:20px;height:20px;flex-shrink:0}
+.network-message :focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+.network-message .feed-status{font-size:15px;line-height:1.6}
+.network-message .thread-back{font-size:14px;line-height:1.6}
+.network-message .feed-tab{min-height:44px;font-size:15px}
+.network-message .feed-tab.active{border-color:var(--accent)}
+.network-message .linked-objects a{font:13px/1.5 system-ui,sans-serif;background:#f7f8fa;border-radius:4px;min-height:36px}
+.network-message dialog.composer{position:fixed;inset:0;margin:auto;width:min(680px,calc(100% - 32px));max-height:calc(100dvh - 32px);overflow:auto;border:1px solid var(--line);border-radius:12px;background:white;color:var(--ink);padding:30px;box-shadow:0 20px 80px #11131826}
+.composer::backdrop{background:#11131866}
+.network-message .composer-close{float:right;width:44px;height:44px;padding:0;background:#f7f8fa;color:var(--ink);border:1px solid var(--line);border-radius:6px}
+.network-message .composer>p{font-size:16px;max-width:55ch}
+.network-message .composer h2{font-size:28px}
+adam-robot{display:block;width:36px;height:56px;margin:8px 12px 24px;flex-shrink:0}
+adam-robot .robot-stage{position:relative;display:block;padding:0;border:0;background:transparent;color:inherit;overflow:visible}
+adam-robot canvas{position:absolute;max-width:none;image-rendering:pixelated}
+.contribution-page{max-width:850px;margin:auto;padding:40px 24px 80px;overflow-wrap:anywhere}
+.contribution-page h1{font-size:clamp(30px,5vw,44px);line-height:1.15;letter-spacing:-1px}
+.contribution-page h2{font-size:23px;margin-top:32px}
+.contribution-page p{max-width:70ch}.contribution-page pre{overflow:auto;background:#f7f8fa;padding:20px;font-size:14px}
+@media(max-width:720px){.network-message .message-sidebar>p{font-size:15px}.network-message .compose-link{max-width:200px}.network-message dialog.composer{padding:22px 18px;max-height:calc(100dvh - 16px);width:calc(100% - 16px)}.network-message .network-header nav{font-size:14px}.network-message footer div{font-size:13px}.network-message .header-api{font-size:13px}}
